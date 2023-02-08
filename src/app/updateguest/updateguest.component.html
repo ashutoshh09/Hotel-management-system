@@ -1,0 +1,14 @@
+<h3>Update guest details</h3>
+<hr/>
+<div class="container">
+<form (ngSubmit)="onSubmit()" #guestForm="ngForm">
+
+    <!-- Guest ID:<input type="number" [(ngModel)]="guest.id" name="id" required/><br> -->
+  <div class="form-group"> <label> Guest Name:</label><input class="form-control" type="text" [(ngModel)]="guest.name" name="name"/></div>
+  <div class="form-group">  <label>  Guest check_in:</label><input class="form-control" type="date" value="2013-01-08" [(ngModel)]="guest.check_in" name="check_in"/></div>
+    <div class="form-group">   <label> Guest check_out:</label><input class="form-control" type="date" value="2013-01-09" [(ngModel)]="guest.check_out" name="check_out"/></div>
+        <div class="form-group">   <label>   Guest Room:</label><input class="form-control" type="number" [(ngModel)]="guest.room" name="room"/></div>
+            <div class="form-group">   <label>   Guest No of guest:</label><input class="form-control" type="number" [(ngModel)]="guest.nosguest" name="nosguest"/></div>
+<button type="submit">submit</button>
+</form>
+</div>
