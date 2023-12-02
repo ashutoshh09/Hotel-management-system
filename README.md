@@ -1,4 +1,4 @@
-Trident Hotels 
+Hotel Management System
 
 Project Overview  
 
